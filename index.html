@@ -34,7 +34,7 @@
 </head>
 <body>
     <div class="centred">
-        <img>id="hand" src="hand.png"</img><br>
+        <img id="hand" src="hand.png"></img><br>
         <span class="rightTop">
             <button id="button">click me</button>
         </span>
@@ -51,17 +51,10 @@
        "retrigger" : true
     });
     
-    var slap2 = new Tone2.Player({
-       "url" : "borat.mp3",
-       "retrigger" : true
-    });
-        
     slap.connect(Tone.Master);
-    slap2.connect(Tone2.Master);
 
     function mouseActions(event) {
         slap.start();
-        slap2.start();
     }
     </script>
 
